@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Datacults Display</title>
+    <style>
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:25px;;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.padder{
+    margin-top: 10%;
+padding-left: 10%;
+padding-right: 10%;
+margin-bottom: 10%;
+
+}
+.jumbopadder{
+    margin-top: 10%;
+padding-left: 10%;
+padding-right: 10%;
+
+}
+
+body { 
+    overflow-x: hidden;
+
+   background: url("https://images.wallpaperscraft.com/image/cctv_camera_security_80080_1920x1080.jpg	") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+
+}
+
+        .header {
+            padding-right: 0;
+            padding-left: 0;
+            /* https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
+            clip-path: polygon(0 0,
+                /* left top */
+                100% 0,
+                /* right top */
+                100% 100%,
+                /* right bottom */
+                0 90%
+                /* left bottom */
+                );
+        }
+        #imgbck {
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
+}
+    </style>
+</head>
+
+<body>
+
+   <div id="includedContentNav"></div>
+
+
+
+
+    <div class="jumbotron jumbopadder" style="color:#fff; background: rgba(0,0,0,0.7); margin:0; ">
+            <h1 class="display-4">CCTV</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <hr class="my-4" style="background:#fff;">
+            <p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Contact Service Center</a>
+            </p>
+          </div>
+
+   <div id="includedContentFoot"></div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+
+     <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+	
+	
+	 <script> 
+    $(document).ready(function(){
+      $("#includedContentNav").load("./dcparts/navbar.html"); 		
+	$("#includedContentFoot").load("./dcparts/footer.html"); 	
+	});
+    </script> 
+	
+</body>
+
+</html>
