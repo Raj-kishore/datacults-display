@@ -1,19 +1,38 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-    <title>Datacults Display</title>
-    <style>
+  
+    <title>Display</title>
+	  
+  <style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -42,19 +61,6 @@
   background: #dd4b39;
   color: white;
 }
-.padder{
-    margin-top: 10%;
-padding-left: 10%;
-padding-right: 10%;
-margin-bottom: 10%;
-
-}
-.jumbopadder{
-    margin-top: 10%;
-padding-left: 10%;
-padding-right: 10%;
-
-}
 
 body { 
     overflow-x: hidden;
@@ -65,95 +71,429 @@ body {
   -o-background-size: cover;
   background-size: cover; 
 
+}	
+
+.parallax {
+  /* The image used */
+  background-image: url("https://www.freewebheaders.com/wordpress/wp-content/gallery/abstract-size-1024x300/colorful-watercolor-grunge-abstract-header_size-1024x300.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+  </style>
+  </head>
+  <body>
+  
+  
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://cdn0.iconfinder.com/data/icons/o-clock-12-hours/96/clock_11-512.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Demo
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        .header {
-            padding-right: 0;
-            padding-left: 0;
-            /* https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/ */
-            clip-path: polygon(0 0,
-                /* left top */
-                100% 0,
-                /* right top */
-                100% 100%,
-                /* right bottom */
-                0 90%
-                /* left bottom */
-                );
-        }
-        #imgbck {
-  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
-  filter: blur(1px);
-}
-
-
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu a::after {
-  transform: rotate(-90deg);
-  position: absolute;
-  right: 6px;
-  top: .8em;
-}
-
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-left: .1rem;
-  margin-right: .1rem;
-}
-    </style>
-</head>
-
-<body>
-
-   <div id="includedContentNav"></div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="./home.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./about.html">About Us</a>
+      </li>
+	  
+      <li class="nav-item dropdown">
+	  
+        <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Products
+        </a>
+		
+		   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Plumbing</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./product.html#pspf">Swr Pipes & Fittings</a></li>
+              <li><a class="dropdown-item" href="./product.html#pupf">Upvc Pipes & Fittings</a></li>
+			  <li><a class="dropdown-item" href="./product.html#pppf">pvc pipes & fittings</a></li>
+			  <li><a class="dropdown-item" href="./product.html#pcpf">cpvc pipes & fittings</a></li>
+			  <li><a class="dropdown-item" href="./product.html#prw">roof water</a></li>
+			     <div class="dropdown-divider"></div>
+			  <li><a class="dropdown-item" href="./product.html#pom">other materials</a></li>
+	
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
 
 
 
+            </ul>
+          </li>
+		  
+		  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Electrical Cables</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./product.html#ec1">- - -</a></li>
+              <li><a class="dropdown-item" href="./product.html#ec2">- - -</a></li>
 
-    <div class="jumbotron jumbopadder" style="background:rgba(0,0,0,0.7); color:#fff; margin:0;">
-            <h1 class="display-4">Security Services</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-          </div>
 
-   <div id="includedContentFoot"></div>
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
 
+
+
+            </ul>
+          </li>
+		  
+		  
+		  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Tanks</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./product.html#two">2 Layer</a></li>
+              <li><a class="dropdown-item" href="./product.html#three">3 Layer</a></li>
+              <li><a class="dropdown-item" href="./product.html#four">4 Layer</a></li>
+
+
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+
+
+
+            </ul>
+          </li>
+		  
+		  
+		  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Fire Fighting</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./product.html#pg">Pipes GI</a></li>
+              <li><a class="dropdown-item" href="./product.html#vat">Valves (All Types)</a></li>
+              <li><a class="dropdown-item" href="./product.html#se">Safety Equipments</a></li>
+
+
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+
+
+
+            </ul>
+          </li>
+		  
+		  
+		  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Pumps</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./product.html#ff">Fire Fighting</a></li>
+              <li><a class="dropdown-item" href="./product.html#swp">Submersible Water Pumps</a></li>
+              <li><a class="dropdown-item" href="./product.html#g">Gutter</a></li>
+			   <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="./product.html#ot">Other Types</a></li>
+
+
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+              <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a> -->
+                <!-- <ul class="dropdown-menu"> -->
+                  <!-- <li><a class="dropdown-item" href="#">Subsubmenu action</a></li> -->
+                  <!-- <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li> -->
+                <!-- </ul> -->
+              <!-- </li> -->
+
+
+
+            </ul>
+          </li>
+		  
+		  
+		  
+        </ul>
+	
+      </li>
+	  
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Security Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./security.html#saw">Securities And Watchman</a>
+          <a class="dropdown-item" href="./security.html#ss">Security Supervisor</a>
+		   <a class="dropdown-item" href="./security.html#b">Bouncer</a>
+        </div>
+      </li>
+	  
+	  
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Other Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			
+	
+	
+
+          <a class="dropdown-item" href="./other.html#ps">Party Security</a>
+          <a class="dropdown-item" href="./other.html#vs">Valet Services</a>
+          <a class="dropdown-item" href="./other.html#hk">house keeping</a>
+        </div>
+      </li>
+	  
+	  <li class="nav-item">
+        <a class="nav-link" href="./cctv.html">CCTV</a>
+      </li>
+	  
+      <li class="nav-item">
+        <a class="nav-link" href="./contact.html">Contact Us</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       
+<div class="parallax"></div>
+	
+	
+	</div>
+  </div>
+</div>
+
+<div class="card-group" style="margin:10%;">
+  <div class="card">
+     <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+  <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+   <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       
+<div class="parallax"></div>
+
+   </div>
+  </div>
+</div>
+<div class="card-group" style="margin:10%;">
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+  <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+   <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     
+<div class="parallax"></div>
+  </div>
+  </div>
+</div>
+<div class="card-group" style="margin:10%;">
+  <div class="card">
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+  <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+   <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+  
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+<div class="container-fluid"  style="padding:0;"> 
+  <div class="jumbotron" style="background:#000 !important; margin:0; color:#ccc; border-radius:0;">
+             
+							<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h3><b>LOGO</b></h3>
+    </div>
+    <div class="col-sm">
+      <b>Get Started</b>
+	  <hr/ style="background:#333;">
+	  <p>Home</p>
+	  <p>Sign Up</p>
+	  <p>Products</p>
+    </div>
+    <div class="col-sm">
+      <b>About Us</b>
+	      <hr/ style="background:#333;">
+	  <p>Company Information</p>
+	  <p>Contact Us</p>
+	  <p>Reviews</p>
+    </div>
+	    <div class="col-sm">
+      <b>Support</b>
+	     <hr/ style="background:#333;">
+	  <p>FAQ</p>
+	  <p>Help Desk</p>
+	  <p>Forums</p>
+    </div>
+	    <div class="col-sm text-center">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<hr/>
+
+<button type="button" class="btn btn-secondary">Call Us</button>
+    </div>
+  </div>
+</div>
+					
+            </div>
+			<nav class="navbar navbar-dark bg-dark ">
+			
+	
+			 <div class="col-sm text-center">
+  <!-- Navbar content -->
+   <span class="navbar-text" >
+ All Rights Reserved &nbsp <b>| </b>&nbsp Powered by Datacults Co.
+  </span>
+  <br/>
+     <span class="navbar-text" >
+   <b>Copyrights 2019</b>
+  </span>
+  </div>
+</nav>
+    </div>
 
     <!-- Optional JavaScript -->
-
-		
-		
-		
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
-
-     <script>
-        $('.carousel').carousel({
-            interval: 2000
-        })
-    </script>
-	
-	
-	 <script> 
-    $(document).ready(function(){
-      $("#includedContentNav").load("./dcparts/navbar.html", function(){
-	  
-	  $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+$('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
   if (!$(this).next().hasClass('show')) {
     $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
   }
@@ -168,13 +508,7 @@ body {
 
   return false;
 });
-	  }); 		
-	$("#includedContentFoot").load("./dcparts/footer.html"); 	
-	});
-    </script> 
-	
-
-	
-</body>
-
+});
+  </script>
+  </body>
 </html>
